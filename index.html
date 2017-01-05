@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--
+	hacked from http://slides.html5rocks.com/
+-->
+<html manifest="cache.appcache">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <title>Trackers</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
+    <link id="prettify-link" href="src/prettify/prettify.css" rel="stylesheet" disabled />
+    <link href="css/moon.css" class="theme" rel="stylesheet" />
+    <link href="css/sand.css" class="theme" rel="stylesheet" />
+    <link href="css/sea_wave.css" class="theme" rel="stylesheet" />
+    <link href="css/default.css" class="theme" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <div class="presentation">
+      <div id="presentation-counter">Loading forever?...</div>
+      <div class="slides">
+
+        <div class="slide" id="landing-slide">
+          <style>
+            #landing-slide p {
+              font-size: 35px;
+            }
+            p#disclaimer-message {
+              font-size: 20px;
+            }
+          </style>
+          <section class="middle">
+            <p>Trackers<br>Workshop</p>
+            <h3><a href="http://tpolm.org/~ps">Filipe Cruz</a></h3>
+            <br>
+            [<a href="http://enoughrecords.org/mediawiki/index.php/Trackers_Workshop">secret cheat sheet</a>]
+          </section>
+          <aside class="note">
+            <section>
+              Welcome! (This field is for presenter notes and commentary.)
+            </section>
+          </aside> 
+        </div>
+
+       <div class="slide" id="introduction">
+          <header><h1>WHOIS...</h1></header>
+          <style>
+            #introduction li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+
+          <section>
+            <ul>
+            <li>[1979] Hello World!</li>
+            <li>[1985] ZX Spectrum (started learning to code)</li>
+			<li>[1995] PC (started getting involved with demoscene)</li>
+			<li>[1997] started tracking with Impulse Tracker</li>
+			<li>[1998] DemoJournal - weekly reviews of tracks</li>
+			<li>[1999] started tracking with Jeskola Buzz</li>
+			<li>[2000] Scene.Org music groups reviewer</li>
+			<li>[2001] Enough Records Netlabel</li>
+			<li>[2011] Moved to Finland</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide" id="table-of-contents">
+          <header><h1>TOC</h1></header>
+          <style>
+            #toc-list > li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+
+          <section>
+            <ul id="toc-list">
+            	<li>Tracker?</li>
+            	<li>File Formats</li>
+            	<li>Get Tracking</li>
+            	<li>Modular Trackers</li>
+            	<li>Chiptunes and Emulators</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Tracker?</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+            <a href="http://en.wikipedia.org/wiki/Tracker_(music_software)">Wikipedia sayz</a><br><br>
+            Trackers are a class of music sequencer software used to create and edit module files.<br><br>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Tracker?</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+            Became popular with the Commodore Amiga:<br><br>
+            Ultimate Soundtracker, 1987<br>
+            NoiseTracker, 1989<br>
+            Protracker, 1990<br>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Tracker?</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+            Grew more popular with MS-DOS:<br><br>
+            Scream Tracker 3, 1990<br>
+            Fast Tracker 2, 1995<br>
+			Impulse Tracker, 1995<br> 
+          </section>
+        </div>
+ 
+         <div class="slide">
+          <header><h1>Tracker?</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+            Still lives on:<br><br>
+            Renoise<br>
+            Modplug Tracker<br>
+			Jeskola Buzz<br> 
+			Schism Tracker<br> 
+			Milky Tracker<br> 
+          </section>
+        </div>
+ 
+        <div class="slide">
+          <header><h1>Tracker?</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+            Trackers History Graph<br>
+            <a href="http://helllabs.org/tracker-history/trackers.svg">http://helllabs.org/tracker-history/trackers.svg</a>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>File Formats</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+            .mod => Amiga modules (usually 4channels)<br>
+            .s3m => Scream Tracker 3<br>
+            .xm  => Fast Tracker 2<br>
+            .it  => Impulse Tracker<br> 
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Get Tracking</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+            	Download Renoise<br>
+            	<a href="http://renoise.com/">http://renoise.com/</a><br><br>
+            	Download Schism Tracker<br>
+            	<a href="http://schismtracker.org/wiki/Schism%20Tracker">http://schismtracker.org/</a><br><br>
+            	Download some Modules<br>
+            	<a href="http://modarchive.org/index.php?request=view_top_favourites">http://modarchive.org/</a>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Get Tracking</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+          	<ul>
+				<li>Sample</li>
+            	<li>Instrument</li>
+            	<li>Pattern</li>
+            	<li>Track</li>
+            </ul>
+            </section>
+        </div>
+        
+         <div class="slide">
+          <header><h1>Get Tracking</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+          	Sample<br><br>
+          	.wav / .aiff<br>
+          	mono / stereo<br>
+          	22050 / 44100 / 48000<br>
+            </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>Get Tracking</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+          	Instrument<br><br>
+          	ADSR<br>
+          	Panning / Volume / Loop<br>
+            </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>Get Tracking</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+          	Pattern<br><br>
+          	Multiple channels in a timeline<br>
+          	Trigger instrument and effects<br>
+            </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Get Tracking</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+			Effects<br><br>
+			Oldschool Tracking Effects (RTFM)<br><br>
+			Newschool Channel Effects (DSP, VST)<br><br>
+          </section>
+        </div>
+ 
+         <div class="slide">
+          <header><h1>Get Tracking</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+          	Track<br><br>
+          	BPM<br>
+          	Sequence of Patterns<br>
+            </section>
+        </div> 
+
+        <div class="slide">
+          <header><h1>Modular Tracking</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+			Jeskola Buzz<br>
+			Psycle<br>
+			<br>
+			Audiomulch<br>
+			Plogue Bidule<br>
+			Bonneville CPS<br>
+			PureData<br>
+			Max/MSP<br>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Chiptunes and Emulators</h1></header>
+          <style>
+            section {
+              font-size: 35px;
+            }
+          </style>
+          <section>
+			Sound of the SoundChip in 8bit and 16bit platforms<br>
+			<br>
+			C64 SID (MOS 6581 / MOS 6582 / MOS 8580)<br>
+			Atari SNDH (YM2149)<br>
+			Amstrad CPC (AY-3-8912)<br>
+			ZX Spectrum (AY-3-8912, AY-3-8910, YM2149F)<br>
+			NES (2A03)<br>
+			Gameboy<br><br>
+			[<a href="http://enoughrecords.org/mediawiki/index.php/Trackers_Workshop">secret cheat sheet</a>]
+          </section>
+        </div>
+    
+      </div> <!-- slides -->
+      <style>
+      #speaker-note {
+        position:absolute;
+        left: 0;
+        top: 80%;
+        width: 100%;
+        height: 20%;
+        z-index: 50;
+        opacity: 0.75;
+        background-color: white;
+        overflow: auto;
+        padding: 2px 20px;
+        -webkit-transition: top 0.5s ease-in-out;
+        -moz-transition: top 0.5s ease-in-out;
+        -o-transition: top 0.5s ease-in-out;
+        transition: top 0.5s ease-in-out;
+      }
+      #speaker-note.invisible {
+        top: 101%;
+      }
+      </style>
+      <div id="speaker-note" class="invisible" style="display: none;">
+      </div> <!-- speaker note -->
+    </div> <!-- presentation -->
+
+    <script src="js/utils.js?20110607"></script>
+    
+  </body>
+
+</html>
